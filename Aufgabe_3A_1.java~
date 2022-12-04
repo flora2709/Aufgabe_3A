@@ -1,0 +1,32 @@
+import java.io.*;
+
+
+public class Aufgabe_2A_1{
+
+    public static int methode (int a){
+
+        int input;
+        String binary = Integer.toString(input, 2);
+
+        int anzahlStellen = binary.length();
+        return anzahlStellen;
+    }
+
+    public static void main(String[] args) throws IOException {
+    
+        BufferedReader eingabe = new BufferedReader(new InputStreamReader(System.in));
+        int zahl;
+        int binarylength;
+        do {
+            System.out.println("Bitte ganze Zahl groesser als 1 eingeben: ");
+            zahl = Integer.parseInt(eingabe.readLine());
+            System.out.println("Gelesene Zahl: " + zahl);
+            
+        }
+        while (zahl >= 1);
+
+        binarylength = methode(zahl);
+
+        System.out.println("Anzahl der Binaerstellen von" + zahl + ": " + binarylength );
+    }
+}
