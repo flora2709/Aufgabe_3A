@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="Aufgabe_3A_2" comment="" type="program" style="nice">
+ <children>
+
+<instruction text="&#34;int arraygroesse deklarieren&#34;" comment="" color="80FFFF" rotated="0"></instruction>
+<repeat text="&#34;während arraygroesse groesser als 3 und kleiner als 7 ist&#34;" comment="" color="FFFFFF">
+ <qRepeat>
+
+<instruction text="&#34;Ausgabe: &#34;&#34;Wie viele Strings soll ihr Array erhalten?&#34;&#34;&#34;" comment="" color="FF80C0" rotated="0"></instruction>
+<instruction text="&#34;Ausgabe: &#34;&#34;Bitte eine ganze Zahl kleiner als 3 oder groesser als 7 eingeben:&#34;&#34;&#34;" comment="" color="FF80C0" rotated="0"></instruction>
+<instruction text="&#34;Wert einlesen in int arraygroesse&#34;" comment="" color="FF9F71" rotated="0"></instruction>
+ </qRepeat>
+</repeat>
+<instruction text="&#34;String array erzeugen&#34;" comment="" color="80FFFF" rotated="0"></instruction>
+<instruction text="&#34;array referenzieren auf Arrayobjekt mit Wert von arraygroesse&#34;" comment="" color="80FFFF" rotated="0"></instruction>
+<while text="&#34;für i von 0 bis arraygroesse&#34;" comment="" color="FFFFFF">
+ <qWhile>
+
+<instruction text="&#34;Ausgabe: &#34;&#34;Geben Sie den Inhalt fuer Ihr Array ein:&#34;&#34;&#34;" comment="" color="FF80C0" rotated="0"></instruction>
+<instruction text="&#34;speichere Eingabe in Elementposition i&#34;" comment="" color="FF9F71" rotated="0"></instruction>
+<instruction text="&#34;i um 1 erhöhen&#34;" comment="" color="80FF80" rotated="0"></instruction>
+ </qWhile>
+</while>
+<instruction text="&#34;int lg deklarieren&#34;" comment="" color="80FFFF" rotated="0"></instruction>
+<instruction text="&#34;Ausgabe: &#34;&#34;Bitte eine ganze Zahl lg eingeben:&#34;&#34;&#34;" comment="" color="FF80C0" rotated="0"></instruction>
+<instruction text="&#34;Eingabe und Speicherung in lg&#34;" comment="" color="FF9F71" rotated="0"></instruction>
+<instruction text="&#34;Ausgabe lg: &#34;&#34;lg lautet: &#34;&#34; + lg&#34;" comment="" color="FF80C0" rotated="0"></instruction>
+<instruction text="&#34;int groesser deklarieren&#34;" comment="" color="80FFFF" rotated="0"></instruction>
+<while text="&#34;für n von 0 bis arraygroesse&#34;" comment="" color="FFFFFF">
+ <qWhile>
+
+<while text="&#34;wenn Länge des Arrayelements an Position n groesser gleich lg&#34;" comment="" color="FFFFFF">
+ <qWhile>
+
+<instruction text="&#34;groesser um 1 erhöhen&#34;" comment="" color="80FF80" rotated="0"></instruction>
+ </qWhile>
+</while>
+ </qWhile>
+</while>
+<instruction text="&#34;Ausgabe: Anzahl der Strings im Array mit einer Laenge kleiner als lg: &#34;&#34; + kleiner&#34;" comment="" color="FF80C0" rotated="0"></instruction>
+<instruction text="&#34;int kleiner deklarieren&#34;" comment="" color="80FFFF" rotated="0"></instruction>
+<instruction text="&#34;int kleiner = arraygroesse - groesser&#34;" comment="" color="80FFFF" rotated="0"></instruction>
+<instruction text="&#34;Ausgabe: &#34;&#34;Anzahl der Strings im Array mit einer Länge groesser oder gleich lg: &#34;&#34; + groesser&#34;" comment="" color="FF80C0" rotated="0"></instruction>
+<alternative text="&#34;groesser == kleiner&#34;" comment="" color="FFFFFF">
+ <qTrue>
+
+<instruction text="&#34;Ausgabe: &#34;&#34;Die Anzahlen sind gleich.&#34;&#34;&#34;" comment="" color="FF80C0" rotated="0"></instruction>
+ </qTrue>
+ <qFalse>
+
+<alternative text="&#34;groesser &#62; kleiner&#34;" comment="" color="FFFFFF">
+ <qTrue>
+
+<instruction text="&#34;Ausgabe: &#34;&#34;Es gibt mehr lange Strings.&#34;&#34;&#34;" comment="" color="FF80C0" rotated="0"></instruction>
+ </qTrue>
+ <qFalse>
+
+<alternative text="&#34;groesser &#60; kleiner&#34;" comment="" color="FFFFFF">
+ <qTrue>
+
+<instruction text="&#34;Ausgabe: &#34;&#34;Es gibt mehr kurze Strings.&#34;&#34;&#34;" comment="" color="FF80C0" rotated="0"></instruction>
+ </qTrue>
+ <qFalse>
+
+ </qFalse>
+</alternative>
+ </qFalse>
+</alternative>
+ </qFalse>
+</alternative>
+ </children>
+</root>

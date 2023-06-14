@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="Aufgabe_3A_2" comment="" type="program" style="nice">
+ <children>
+
+<instruction text="&#34;int arraygroesse deklarieren&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<repeat text="&#34;arraygroesse &#62;=3 &#38; &#60;=7&#34;" comment="" color="FFFFFF">
+ <qRepeat>
+
+<instruction text="&#34;einlesen arraygroesse&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;ausgeben arraygroesse&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qRepeat>
+</repeat>
+<instruction text="&#34;array deklarieren&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<while text="&#34;für i von 0 bis arraygroesse&#34;" comment="" color="FFFFFF">
+ <qWhile>
+
+<instruction text="&#34;string in array einlesen&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qWhile>
+</while>
+<instruction text="&#34;int lg deklarieren&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;eingabe lg&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;lglength ermitteln&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;int n und p deklarieren&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<while text="&#34;für n von 0 bis arraygroesse&#34;" comment="" color="FFFFFF">
+ <qWhile>
+
+<while text="&#34;für p von 0 bis lglength&#34;" comment="" color="FFFFFF">
+ <qWhile>
+
+<instruction text="&#34;n und p speichern&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qWhile>
+</while>
+ </qWhile>
+</while>
+<instruction text="&#34;int groesser = p&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;ausgabe groesser&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;int kleiner = arraygroesse - p&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;ausgabe kleiner&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<alternative text="&#34;n == p&#34;" comment="" color="FFFFFF">
+ <qTrue>
+
+<instruction text="&#34;ausgabe &#34;&#34;Anzahl gleich&#34;&#34;&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qTrue>
+ <qFalse>
+
+ </qFalse>
+</alternative>
+<alternative text="&#34;n &#62; p&#34;" comment="" color="FFFFFF">
+ <qTrue>
+
+<instruction text="&#34;ausgabe &#34;&#34;Es gibt mehr lange Strings&#34;&#34;&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qTrue>
+ <qFalse>
+
+ </qFalse>
+</alternative>
+<alternative text="&#34;n &#60; p&#34;" comment="" color="FFFFFF">
+ <qTrue>
+
+<instruction text="&#34;ausgabe &#34;&#34;Es gibt mehr kurze Strings.&#34;&#34;&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </qTrue>
+ <qFalse>
+
+ </qFalse>
+</alternative>
+ </children>
+</root>
